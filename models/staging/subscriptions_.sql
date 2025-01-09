@@ -7,5 +7,6 @@ SELECT
     sb.plan,
     sb.status ,
     sb.payment_term ,
-    sb.payment_method 
+    sb.payment_method,
+    sb.subscription_term 
 FROM src_subscriptions sb
