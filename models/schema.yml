@@ -13,7 +13,7 @@ models:
         tests:
           - not_null
 
-  - name: payments
+  - name: payments_
     columns:
       - name: user_id
         tests:
