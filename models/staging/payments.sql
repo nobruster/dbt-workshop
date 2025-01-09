@@ -2,6 +2,7 @@
 WITH src_payments AS (
 
     SELECT * FROM {{ source('workshop', 'payments') }}
+
 )
 SELECT 
     ps.user_id,
