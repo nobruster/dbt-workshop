@@ -1,8 +1,6 @@
 {{ config(materialized='view') }}
-
 WITH src_subscriptions AS (
-    select *
-    from workshop.dbt_bnunes_workshop.subscriptions  
+    SELECT * FROM {{ source('workshop', 'subscriptions') }}  
 )
 SELECT 
     sb.user_id,

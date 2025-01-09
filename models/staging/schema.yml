@@ -1,0 +1,7 @@
+sources:
+  - name: workshop
+    schema: dbt_bnunes_workshop
+    tables:
+      - name: user
+      - name: payments
+      - name: subscriptions

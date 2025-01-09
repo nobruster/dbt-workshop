@@ -1,8 +1,7 @@
 {{ config(materialized='view') }}
-
 WITH src_payments AS (
-    select *
-    from workshop.dbt_bnunes_workshop.payments  
+
+    SELECT * FROM {{ source('workshop', 'payments') }}
 )
 SELECT 
     ps.user_id,

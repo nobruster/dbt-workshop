@@ -1,8 +1,7 @@
 {{ config(materialized='view') }}
-
 WITH src_user AS (
-    select *
-    from workshop.dbt_bnunes_workshop.user 
+SELECT * FROM {{ source('workshop', 'user') }}
+
 )
 SELECT 
     pu.id,
