@@ -2,7 +2,7 @@
 
 WITH src_subscriptions AS (
     select *
-    from workshop.dbt_bnunes_workshop.subscriptions  limit 10
+    from workshop.dbt_bnunes_workshop.subscriptions  
 )
 SELECT 
     sb.user_id,

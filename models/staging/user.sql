@@ -2,7 +2,7 @@
 
 WITH src_user AS (
     select *
-    from workshop.dbt_bnunes_workshop.user  limit 10
+    from workshop.dbt_bnunes_workshop.user 
 )
 SELECT 
     pu.id,

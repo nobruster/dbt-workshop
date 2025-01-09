@@ -2,7 +2,7 @@
 
 WITH src_payments AS (
     select *
-    from workshop.dbt_bnunes_workshop.payments  limit 10
+    from workshop.dbt_bnunes_workshop.payments  
 )
 SELECT 
     ps.user_id,
